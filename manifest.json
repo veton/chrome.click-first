@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Click First",
+    "version": "0.0.1",
+    "description": "Refreshes the page until it finds a button with a specified text, then clicks the button.",
+    "author": "vet0n",
+    "icons": {
+        "256": "assets/icon.png"
+    },
+    "permissions": [
+        "storage",
+        "scripting",
+        "activeTab",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Click First"
+    },
+    "background": {
+        "service_worker": "service-worker.js",
+        "type": "module"
+    }
+}
